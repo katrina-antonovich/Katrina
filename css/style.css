@@ -294,7 +294,7 @@ button:focus {
 =============================*/
 
 .header-bg-img {
-    background-image: url(../img/bg.jpg);
+    background-image: url(../img/kbg-2.jpg);
     position: relative;
     background-size: cover;
     background-position: 100% 30%;
@@ -302,7 +302,7 @@ button:focus {
 }
 @media (max-width: 600px){
     .header-bg-img {
-        background-position:60% 50%;
+        background-position:center center;
         max-width:100%;
         height:100vh;
     }
