@@ -593,6 +593,7 @@ button:focus {
             -webkit-column-count: 1;
             -moz-column-count: 1;
             column-count: 1;
+            margin:10px;
         }
     }
 
