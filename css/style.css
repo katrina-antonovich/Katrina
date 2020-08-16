@@ -8,7 +8,7 @@
     5.ABOUT 
     6.SERVICES
     7.CLIENT
-    8.WORK
+    8.PHOTOS
     10.FOOTER
     11.RESPONSIVE
 */
@@ -526,7 +526,75 @@ button:focus {
     transform: scale(1.05);
 }
 
+/*======================
+8.Photos
+=========================*/
 
+
+
+.photos { 
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+  
+  .photos img { 
+    width: 100%; 
+    height: auto;
+    transition: 500ms;
+    margin-bottom: 10px;
+    page-break-inside: avoid; /* For Firefox. */
+    -webkit-column-break-inside: avoid; /* For Chrome & friends. */
+    break-inside: avoid; /* For standard browsers like IE. :-) */
+  }
+  
+  @media screen and (min-width: 768px) {
+    .photos { 
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        -webkit-column-gap: 10px;
+        -moz-column-gap: 10px;
+        column-gap: 10px;
+        margin-top: 10px;
+        overflow: hidden;
+      }
+      
+      .photos img { 
+        width: 100%; 
+        height: auto;
+        transition: 500ms;
+        margin-bottom: 10px;
+        page-break-inside: avoid; /* For Firefox. */
+        -webkit-column-break-inside: avoid; /* For Chrome & friends. */
+        break-inside: avoid; /* For standard browsers like IE. :-) */
+      }
+  }
+  
+@media screen and (max-width: 767px) {
+  
+    .photos{ 
+          -webkit-column-count: 2;
+          -moz-column-count: 2;
+          column-count: 2;
+      }
+    .photos div { margin: 0; 
+          width: 200px;
+      }
+   
+    }
+    @media screen and (max-width: 600px) {
+        .photos{ 
+            -webkit-column-count: 1;
+            -moz-column-count: 1;
+            column-count: 1;
+        }
+    }
 
 /*======================
         10.FOOTER
