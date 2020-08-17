@@ -630,7 +630,7 @@ button:focus {
 @media (min-width: 200px) and (max-width: 768px) {
     .custom-nav {
         background-color: #fff !important;
-        padding: 10px 0px !important;
+        padding: 1px 0px !important;
     }
     .custom-nav .container {
         width: 85%;
